@@ -6,7 +6,7 @@ resource "aws_security_group" "ecs_sg" {
     from_port       = 3000
     to_port         = 3000
     protocol        = "tcp"
-    security_groups = [var.alb_sg_id]
+     security_groups = var.alb_sg_id != null ? [var.alb_sg_id] : []
   }
 
   egress {

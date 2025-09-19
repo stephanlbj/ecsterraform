@@ -5,3 +5,6 @@ private_subnets_cidrs = ["10.0.3.0/24", "10.0.4.0/24"]
 cluster_name = "nest-api-cluster-staging"
 service_name = "nest-api-service-staging"
 ecr_name     = "nest_api_staging"
+
+availability_zones = ["eu-north-1a", "eu-north-1b"]
+
