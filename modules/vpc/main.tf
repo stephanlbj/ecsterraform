@@ -33,8 +33,7 @@ resource "aws_nat_gateway" "this" {
 }
 
 resource "aws_eip" "nat" {
-  count = length(aws_subnet.public)
-  vpc   = true
+  count = length(aws_subnet.public) 
 }
 
 

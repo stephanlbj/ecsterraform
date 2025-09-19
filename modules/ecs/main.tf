@@ -61,6 +61,6 @@ resource "aws_ecs_service" "this" {
     container_port   = 3000
   }
 
-  depends_on = [aws_lb_listener.http]
+ 
 }
 
